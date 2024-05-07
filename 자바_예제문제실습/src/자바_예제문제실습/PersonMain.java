@@ -16,6 +16,7 @@ public class PersonMain {
 			
 			Person 사람 = new Person("김영희",10);
 			bw.write(사람.toString());
+			bw.close();
 			System.out.println("파일이 정상적으로 저장되었습니다.");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

@@ -34,7 +34,7 @@ public class AnimalMain {
 		//Animal 동물 = new Animal("코끼리",2);
 		//System.out.println(동물);
 		AnimalMain 동물메인파일만들기 = new AnimalMain();
-		동물메인파일만들기.fileSave("animal.text");
+		동물메인파일만들기.fileSave("animal.txt");
 	}
 	
 	
