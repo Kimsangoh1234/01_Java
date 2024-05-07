@@ -18,6 +18,7 @@ public class 역직렬화 {
 			System.out.println("파일로부터 객체를 역직렬화했습니다.");
 			System.out.println("역직렬화된 학생 txt : "+학생);
 			
+			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
