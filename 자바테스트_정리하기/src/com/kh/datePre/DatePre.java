@@ -20,7 +20,6 @@ public class DatePre {
 		
 		//문자열(SimpleDateFormat - String)을 날짜(Date)로 변경
 		String 문자열 =  "2024-4-30 15:30ㅣ45";
-		Date parseDate = sdf
 	}
 	
 }
