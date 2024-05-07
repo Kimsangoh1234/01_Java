@@ -1,0 +1,38 @@
+package pre.propertiesEx2;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+import com.kh.test.main.oop.Main;
+
+public class PropTest {
+	//fileSave
+	//  1	    순풍산분인과 1998 682
+	//  2		똑바로살아라 2002 239
+	//  3		눈물의여왕	 2024  16
+	//  4		아내의유혹	 2008  129
+	public static void fileSave(Properties p) throws IOException{
+	p.setProperty("순풍산부인과","1998,682");
+	p.setProperty("똑바로살아라","2002,239");
+	p.setProperty("눈물의여왕","2024,16");
+	p.setProperty("아내의유혹","2008,129");
+	
+	try {
+		FileOutputStream fos1 = new FileOutputStream("drama.xml");
+		p.storeToXML(fos1,"drama is fun");
+		fos1.close();
+		
+		System.out.println("설정이 drama.xml 파일에 저장되었습니다.");
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	}
+	public static void main(String[] args) throws IOException {
+		Properties p = new Properties();
+		fileSave(p);
+	}
+	
+}

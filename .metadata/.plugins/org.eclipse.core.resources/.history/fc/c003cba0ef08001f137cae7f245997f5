@@ -1,0 +1,16 @@
+package com.kh.datePre;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class DatePre {
+	public static void main(String[] args) {
+		Date Now = new Date();
+		
+		System.out.println(Now);
+		//Fri May 03 
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		System.out.println(formatData);
+	}
+}
